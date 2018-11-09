@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Icm-kc-Uv4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9uH-eF-iMc">
+            <objects>
+                <viewController id="Icm-kc-Uv4" customClass="ViewController" customModule="MarubatsuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bhG-Tu-cov"/>
+                        <viewControllerLayoutGuide type="bottom" id="yKd-E8-gVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1S3-bt-f1g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gos-mp-0H7">
+                                <rect key="frame" x="191.5" y="483.5" width="163.5" height="163.5"/>
+                                <color key="backgroundColor" red="0.5" green="0.65965813760000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="○">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedYesButton:" destination="Icm-kc-Uv4" eventType="touchUpInside" id="3jr-Vs-Ne3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JO1-J0-68g">
+                                <rect key="frame" x="20" y="483.5" width="163.5" height="163.5"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JO1-J0-68g" secondAttribute="height" multiplier="1:1" id="dIr-ai-I1W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <state key="normal" title="×">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedNoButton:" destination="Icm-kc-Uv4" eventType="touchUpInside" id="g59-ix-vBr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUf-Ix-wNI">
+                                <rect key="frame" x="20" y="28" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Dfz-xb-DvB"/>
+                                </constraints>
+                                <state key="normal" title="問題を作成する">
+                                    <color key="titleColor" red="1" green="0.62988280210000003" blue="0.075734781309999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o24-q3-0nJ" kind="show" id="XuU-bc-cgg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Eg-GV-RVB">
+                                <rect key="frame" x="20" y="66" width="335" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="bwc-Mq-s8X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JO1-J0-68g" firstAttribute="leading" secondItem="1S3-bt-f1g" secondAttribute="leading" constant="20" id="ABV-cL-6Jv"/>
+                            <constraint firstItem="8Eg-GV-RVB" firstAttribute="leading" secondItem="1S3-bt-f1g" secondAttribute="leading" constant="20" id="DSf-mH-3Hn"/>
+                            <constraint firstItem="8Eg-GV-RVB" firstAttribute="top" secondItem="oUf-Ix-wNI" secondAttribute="bottom" constant="8" id="J0P-mc-v8x"/>
+                            <constraint firstItem="oUf-Ix-wNI" firstAttribute="top" secondItem="bhG-Tu-cov" secondAttribute="bottom" constant="8" id="WbZ-Kx-qEp"/>
+                            <constraint firstAttribute="trailing" secondItem="Gos-mp-0H7" secondAttribute="trailing" constant="20" id="bT9-Yo-Rjq"/>
+                            <constraint firstItem="yKd-E8-gVP" firstAttribute="top" secondItem="Gos-mp-0H7" secondAttribute="bottom" constant="20" id="c2k-co-ygN"/>
+                            <constraint firstAttribute="trailing" secondItem="8Eg-GV-RVB" secondAttribute="trailing" constant="20" id="e2r-18-lZ0"/>
+                            <constraint firstItem="Gos-mp-0H7" firstAttribute="width" secondItem="JO1-J0-68g" secondAttribute="width" id="leQ-QT-72e"/>
+                            <constraint firstItem="oUf-Ix-wNI" firstAttribute="leading" secondItem="1S3-bt-f1g" secondAttribute="leading" constant="20" id="nD2-8s-j3x"/>
+                            <constraint firstItem="Gos-mp-0H7" firstAttribute="height" secondItem="JO1-J0-68g" secondAttribute="height" id="o3a-h5-Pth"/>
+                            <constraint firstItem="yKd-E8-gVP" firstAttribute="top" secondItem="JO1-J0-68g" secondAttribute="bottom" constant="20" id="seq-GQ-lpN"/>
+                            <constraint firstAttribute="trailing" secondItem="oUf-Ix-wNI" secondAttribute="trailing" constant="20" id="x1w-Xp-T3g"/>
+                            <constraint firstItem="Gos-mp-0H7" firstAttribute="leading" secondItem="JO1-J0-68g" secondAttribute="trailing" constant="8" id="z2f-Yb-Gwb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="batsuButton" destination="JO1-J0-68g" id="uT5-Tf-dHk"/>
+                        <outlet property="maruButton" destination="Gos-mp-0H7" id="UBM-j5-7ci"/>
+                        <outlet property="questionLabel" destination="8Eg-GV-RVB" id="A2N-oa-6v0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xq2-ce-N5a" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="27"/>
+        </scene>
+        <!--Question View Controller-->
+        <scene sceneID="mNQ-Xp-vO8">
+            <objects>
+                <viewController id="o24-q3-0nJ" customClass="QuestionViewController" customModule="MarubatsuApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TJ0-lw-Y5A"/>
+                        <viewControllerLayoutGuide type="bottom" id="bGo-JG-WIq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FGY-BB-imf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfC-df-8pm">
+                                <rect key="frame" x="127" y="28" width="121" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="8dW-lF-fB3"/>
+                                    <constraint firstAttribute="height" constant="30" id="Zk5-ti-LVT"/>
+                                </constraints>
+                                <state key="normal" title="TOPに戻る">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBackToTopButton:" destination="o24-q3-0nJ" eventType="touchUpInside" id="7WC-ac-Pz0"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="問題を入力して下さい" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sEq-cJ-6ki">
+                                <rect key="frame" x="62.5" y="318.5" width="250" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Udl-Re-n5u"/>
+                                    <constraint firstAttribute="width" constant="250" id="jLw-z2-lrU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VHM-8h-dWc">
+                                <rect key="frame" x="127.5" y="398.5" width="120" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="8lL-kU-26p"/>
+                                    <constraint firstAttribute="height" constant="30" id="Jxx-6Z-Izm"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="×"/>
+                                    <segment title="◯"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PHG-0p-1UQ">
+                                <rect key="frame" x="149" y="478.5" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3oR-KG-gRP"/>
+                                </constraints>
+                                <state key="normal" title="問題を保存"/>
+                                <connections>
+                                    <action selector="tapSaveButton:" destination="o24-q3-0nJ" eventType="touchUpInside" id="iHT-jV-AVN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dep-Gc-54m">
+                                <rect key="frame" x="149" y="607" width="77" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="anN-5o-e7P"/>
+                                </constraints>
+                                <state key="normal" title="問題を削除">
+                                    <color key="titleColor" red="1" green="0.15142011480000001" blue="0.053470138549999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAllDeleteButton:" destination="o24-q3-0nJ" eventType="touchUpInside" id="w7d-j9-Mll"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sEq-cJ-6ki" firstAttribute="centerY" secondItem="FGY-BB-imf" secondAttribute="centerY" id="8Xu-7N-kzW"/>
+                            <constraint firstItem="WfC-df-8pm" firstAttribute="centerX" secondItem="FGY-BB-imf" secondAttribute="centerX" id="AQh-Fn-gUD"/>
+                            <constraint firstItem="dep-Gc-54m" firstAttribute="centerX" secondItem="FGY-BB-imf" secondAttribute="centerX" id="H3p-r8-vaM"/>
+                            <constraint firstItem="sEq-cJ-6ki" firstAttribute="centerX" secondItem="FGY-BB-imf" secondAttribute="centerX" id="Tte-zC-1tB"/>
+                            <constraint firstItem="bGo-JG-WIq" firstAttribute="top" secondItem="dep-Gc-54m" secondAttribute="bottom" constant="30" id="UvQ-Co-djn"/>
+                            <constraint firstItem="PHG-0p-1UQ" firstAttribute="top" secondItem="VHM-8h-dWc" secondAttribute="bottom" constant="50" id="V78-Zp-MFH"/>
+                            <constraint firstItem="WfC-df-8pm" firstAttribute="top" secondItem="TJ0-lw-Y5A" secondAttribute="bottom" constant="8" id="Y9C-Au-8uP"/>
+                            <constraint firstItem="VHM-8h-dWc" firstAttribute="centerX" secondItem="FGY-BB-imf" secondAttribute="centerX" id="hkH-Jc-aBO"/>
+                            <constraint firstItem="PHG-0p-1UQ" firstAttribute="centerX" secondItem="FGY-BB-imf" secondAttribute="centerX" id="szA-uM-HBM"/>
+                            <constraint firstItem="VHM-8h-dWc" firstAttribute="top" secondItem="sEq-cJ-6ki" secondAttribute="bottom" constant="50" id="u6h-QE-MLr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="marubatsuControl" destination="VHM-8h-dWc" id="uQM-sn-Rk9"/>
+                        <outlet property="questionField" destination="sEq-cJ-6ki" id="xnp-fa-ymn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="69V-tg-Gx0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="27"/>
+        </scene>
+    </scenes>
+</document>
